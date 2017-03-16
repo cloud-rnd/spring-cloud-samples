@@ -1,0 +1,26 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        svn:
+          uri: http://scm.vm:8060/incubator/poc-config-registry/
+          password: aider
+          username: aider
+          default-label: trunk
+          basedir: config-registry
+        #git:
+        #  uri: https://github.com/pcf-guides/configuration-server-config-repo
+  profiles:
+    active: subversion
+
+logging:
+  level:
+    org.springframework.boot.env.PropertySourcesLoader: TRACE
+    org.springframework.cloud.config.server: DEBUG
+  
+    
