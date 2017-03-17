@@ -6,19 +6,21 @@ spring:
     name: config-service
   cloud:
     config:
+      uri: http://${CONFIG_SERVICE_DOMAIN:localhost}:8888 
       server:
         git:
           uri: https://github.com/cloud-rnd/config-registry.git
           basedir: config-registry
-        svn:
-          uri: http://scm.vm:8060/incubator/poc-config-registry/
-          password: aider
-          username: aider
-          default-label: trunk
-          basedir: config-registry
+#        svn:
+#          uri: http://scm.vm:8060/incubator/poc-config-registry/
+#          password: aider
+#          username: aider
+#          default-label: trunk
+#          basedir: config-registry
   profiles:
     # You can choose active git or svn. 
     active: git
+
 
 logging:
   level:

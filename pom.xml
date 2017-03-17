@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.chiwooplatform.cloud.sample</groupId>
-	<artifactId>poc-cloud-config</artifactId>
+	<artifactId>config-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>poc-cloud-config</name>
+	<name>config-service</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -61,5 +61,5 @@
 	</build>
 
 
-	<description>SpringCloud Config Server for PoC</description>
+	<description>SpringCloud Config Service for PoC</description>
 </project>
