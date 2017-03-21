@@ -10,7 +10,7 @@ spring:
       server:
         git:
           uri: https://github.com/cloud-rnd/config-registry.git
-          basedir: config-registry
+          basedir: ../LightSaber-configs
 #        svn:
 #          uri: http://scm.vm:8060/incubator/poc-config-registry/
 #          password: aider
