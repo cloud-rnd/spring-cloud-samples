@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: config-service
+
+
+endpoints:
+  shutdown:
+    #No auth  protected
+    sensitive: false
+    #Enable shutdown endpoint
+    enabled: true
